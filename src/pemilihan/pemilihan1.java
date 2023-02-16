@@ -20,29 +20,28 @@ public class pemilihan1 {
         int UTS = sc.nextInt();
         System.out.print("Masukkan Nilai UAS: ");
         int UAS = sc.nextInt();
-        System.out.print("\n================================\n================================");
+        System.out.print("================================\n================================");
         double nilaiAkhir = tugas * 0.2 + UTS * 0.35 + UAS * 0.45;
-        System.out.println("Nilai Akhir : " + nilaiAkhir);
+        System.out.println("    \nNilai Akhir : " + nilaiAkhir);
         String nilaiHuruf;
         String keterangan = "SELAMAT LULUS";
-        
-            if (nilaiAkhir > 80 && nilaiAkhir <= 100) {
-                nilaiHuruf = "A";
-            } else if (nilaiAkhir > 73 && nilaiAkhir <= 80) {
-                nilaiHuruf = "B+";
-            } else if (nilaiAkhir > 65 && nilaiAkhir <= 73) {
-                nilaiHuruf = "B";
-            } else if (nilaiAkhir > 60 && nilaiAkhir <= 65) {
-                nilaiHuruf = "C+";
-            } else if (nilaiAkhir > 50 && nilaiAkhir <= 60) {
-                nilaiHuruf = "C";
-            } else if (nilaiAkhir > 39 && nilaiAkhir <= 50) {
-                nilaiHuruf = "D";
-            } else {
-                nilaiHuruf = "E";
-                keterangan = "TIDAK LULUS";
-            }
+
+        if (nilaiAkhir > 80 && nilaiAkhir <= 100) {
+            nilaiHuruf = "A";
+        } else if (nilaiAkhir > 73 && nilaiAkhir <= 80) {
+            nilaiHuruf = "B+";
+        } else if (nilaiAkhir > 65 && nilaiAkhir <= 73) {
+            nilaiHuruf = "B";
+        } else if (nilaiAkhir > 60 && nilaiAkhir <= 65) {
+            nilaiHuruf = "C+";
+        } else if (nilaiAkhir > 50 && nilaiAkhir <= 60) {
+            nilaiHuruf = "C";
+        } else if (nilaiAkhir > 39 && nilaiAkhir <= 50) {
+            nilaiHuruf = "D";
+        } else {
+            nilaiHuruf = "E";
+            keterangan = "TIDAK LULUS";
+        }
         System.out.println("Nilai Huruf : " + nilaiHuruf + "\n================================\n" + keterangan);
-        
     }
 }

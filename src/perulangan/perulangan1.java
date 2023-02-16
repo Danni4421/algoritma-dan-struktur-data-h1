@@ -13,25 +13,25 @@ import java.util.Scanner;
 public class perulangan1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String[] day = {"Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu", "Minggu"};
-        
+        String[] day = { "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu", "Minggu" };
+
         String nim;
         System.out.print("Masukkan NIM : ");
         nim = sc.next();
-        
+
         String twoDigits = nim.charAt(nim.length() - 2) + "" + nim.charAt(nim.length() - 1);
         int getTwoDigits = Integer.parseInt(twoDigits);
-        
+
         if (getTwoDigits < 10) {
             getTwoDigits += 10;
         }
-        
+
         int c = 0;
         for (int i = 0; i < getTwoDigits; i++) {
             if (c == day.length) {
                 c = 0;
             }
-            System.out.println(day[c] + " ");
+            System.out.print(day[c] + " ");
             c++;
         }
     }

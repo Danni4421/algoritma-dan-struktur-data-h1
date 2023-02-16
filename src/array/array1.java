@@ -77,6 +77,7 @@ public class array1 {
                             int getInputPlace = sc.nextInt();
                             
                             do {
+                                
                                 System.out.print("\nPilih Bunga : \n"
                                     + "1. Aglonema\n"
                                     + "2. Keladi\n"
